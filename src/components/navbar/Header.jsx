@@ -1,10 +1,12 @@
 import React from "react";
+import Img from "../image/headerpic.jpg"
+
 
 const Header = () => {
   return (
-    <div className="container flex justify-between items-center py-4">
-      <img src="../image/headerpic" alt="food" className="h-8 w-auto" />
-         </div>
+    <div className="w-full">
+      <img src={Img} alt="food" className="w-full h-[300px] object-cover" />
+    </div>
   );
 };
 

@@ -1,20 +1,23 @@
-
+import Food from "../components/image/Food.jpg";
+import Dessert from "../components/image/Dessert.jpg";
+import Drink from "../components/image/Drink.jpg";
 export const products = [
   {
     id: 1,
     name: "Food",
-    img: "../image/Food.jpg",
+    imageUrl: Food,
+    category: "Food",
   },
   {
     id: 2,
     name: "Desserts",
-    img: "../image/Dessert.jpg",
+    imageUrl: Dessert,
+    category: "Desserts",
   },
   {
     id: 3,
     name: "Drinks",
-    img: "../image/Drink.jpg",
+    imageUrl: Drink,
+    category: "Drinks",
   },
 ];
-
-
