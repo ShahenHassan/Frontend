@@ -8,6 +8,8 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Header from "./components/navbar/Header";
 import Food from "./pages/product/Food";
+import Desserts from "./pages/product/Desserts";
+import Drinks from "./pages/product/Drinks";
 function App() {
   return (
     <div className="App">
@@ -20,6 +22,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/product/Food" element={<Food />} />
+        <Route path="/product/Desserts" element={<Desserts />} />
+        <Route path="/product/Drinks" element={<Drinks />} />
       </Routes>
 
       <Footer />

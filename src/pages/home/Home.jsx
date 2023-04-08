@@ -21,9 +21,7 @@ function Home() {
               className="block mt-4 text-blue-500 hover:text-blue-700"
             >
               View all {product.category}
-              {/* <div className=" View all">
-                <Link to={"/product.category/Food/" + id}> View all</Link>
-              </div> */}
+             
             </a>
           </div>
         ))}

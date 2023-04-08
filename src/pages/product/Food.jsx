@@ -1,20 +1,55 @@
-import React from "react";
-import FoodsCard from "./FoodsCard";
-import {detailProducts} from "../../data/detailProducts.js";
+import React, { useState } from "react";
+import { foods } from "../../data/foods.js";
 
 const Food = () => {
-  console.log(detailProducts[0]);
+  const [foodd, setFood] = useState(foods);
+
   return (
-    <div className="flex flex-wrap">
-      {detailProducts.map((product) => (
-        <div key={product.id} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-          <FoodsCard product={product} />
+    <>
+      {foodd.map((food) => (
+        <div className="inline-flex mt-8">
+          <div
+            className="bg-white  rounded-lg shadow-lg p-6 h-[379px] mb-4"
+            key={food.id}
+          >
+            <h2 className="text-lg font-semibold text-red-500">{food.name}</h2>
+            <p className="text-gray-600">price:{food.price}</p>
+            <img
+              src={food.imageUrl}
+              alt={food.name}
+              className="w-[200px]  mt-4 "
+            />
+          </div>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 
-
-
 export default Food;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
