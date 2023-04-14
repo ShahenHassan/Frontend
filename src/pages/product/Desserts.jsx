@@ -15,7 +15,7 @@ const Desserts = () => {
             <h2 className="text-lg font-semibold text-red-500">
               {dessert.name}
             </h2>
-            <p className="text-gray-600">price:{dessert.price}</p>
+            <p className="text-gray-600">price:${dessert.price}</p>
             <img
               src={dessert.imageUrl}
               alt={dessert.name}

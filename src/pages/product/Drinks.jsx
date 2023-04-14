@@ -13,7 +13,7 @@ const Drinks = () => {
             key={drink.id}
           >
             <h2 className="text-lg font-semibold text-red-500">{drink.name}</h2>
-            <p className="text-gray-600">price:{drink.price}</p>
+            <p className="text-gray-600">price:${drink.price}</p>
             <img
               src={drink.imageUrl}
               alt={drink.name}

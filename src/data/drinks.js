@@ -13,14 +13,14 @@ export const drinks = [
   },
   {
     id: 2,
-    name: "LemonTea",
+    name: "Lemon Tea",
     imageUrl: LemonTea,
     price: 10,
     category: "Drinks",
   },
   {
     id: 3,
-    name: "yogurtanduwater",
+    name: "yogurt and uwater",
     imageUrl: yogurtanduwater,
     price: 5,
     category: "Drinks",

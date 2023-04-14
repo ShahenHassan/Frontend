@@ -10,6 +10,7 @@ import Header from "./components/navbar/Header";
 import Food from "./pages/product/Food";
 import Desserts from "./pages/product/Desserts";
 import Drinks from "./pages/product/Drinks";
+import Shop from "./pages/shop/Shop";
 function App() {
   return (
     <div className="App">
@@ -24,6 +25,7 @@ function App() {
         <Route path="/product/Food" element={<Food />} />
         <Route path="/product/Desserts" element={<Desserts />} />
         <Route path="/product/Drinks" element={<Drinks />} />
+        <Route path="/Shop" element={<Shop />} />
       </Routes>
 
       <Footer />
